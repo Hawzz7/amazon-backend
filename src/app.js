@@ -19,9 +19,12 @@ app.use(cookieParser());
 //import routes here
 import userRouter from "./routes/user.routes.js";
 import cartRouter from "./routes/cartRoutes.js";
+import { errorHandler } from "./middlewares/errorHandler.js";
 
 //routes declaration
 app.use("/users", userRouter);
 app.use("/cart", cartRouter);
+
+app.use(errorHandler)
 
 export { app };
