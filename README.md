@@ -41,7 +41,7 @@ This project is an e-commerce backend application that handles user authenticati
 * POST /add: Add items to the cart and save purchase history.
 * GET /:userId/history: Get user's purchase history.
 ## Environment Variables
-The application requires the following environment variables:
+ Create a .env file in the root directory and add the following environment variables:
 ```
 ACCESS_TOKEN_SECRET=your_access_token_secret
 REFRESH_TOKEN_SECRET=your_refresh_token_secret
@@ -50,9 +50,40 @@ ACCESS_TOKEN_EXPIRY=your_access_token_expiry_time
 REFRESH_TOKEN_EXPIRY=your_refresh_token_expiry_time
 ```
 ## Getting Started
-1. Clone the Repository:
-   ### For frontend
+### 1. Clone the Repository:
+   #### For backend
    ```
-    git clone https://github.com/t
-    cd amazon_backend
+   git clone https://github.com/Hawzz7/amazon-backend.git
+   cd amazon_backend
    ```
+   
+   #### For frontend
+   ```
+    git clone https://github.com/Hawzz7/amazon_frontend.git
+    cd amazon_frontend
+   ```
+### 2. Install Dependencies:
+ ```
+ npm install
+ ```
+### 3. Run the Application for both frontend and backend
+```
+npm run dev
+```
+The server will start and listen for requests on the configured port.
+
+## Security Practices
+* ``httpOnly Cookies``: Tokens are stored in httpOnly cookies to protect them from being accessed via JavaScript, reducing the risk of XSS attacks.
+*  ``Password Hashing``: User passwords are hashed using bcrypt before storing them in the database.
+
+## Error Handling
+* The application uses a custom `ApiError` class to handle errors and an `errorHandler` middleware to catch and respond to errors consistently across the application.
+
+## Contact me :-
+On email:
+* vicky.007.cr@gmail.com
+
+Or connect on linkedin:
+* Narendra Kumar Majhi :- https://www.linkedin.com/in/narendra-kumar-majhi-78518a206
+
+
