@@ -38,7 +38,6 @@ This project is an e-commerce backend application that handles user authenticati
 * POST /logout: Log out a user and clear tokens.
 * POST /refresh-token: Refresh the access token using a refresh token.
 ### Cart Routes (/cart)
-* POST /add: Add items to the cart and save purchase history.
 * GET /:userId/history: Get user's purchase history.
 ## Environment Variables
  Create a .env file in the root directory and add the following environment variables:
