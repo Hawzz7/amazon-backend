@@ -33,6 +33,7 @@ This project is an e-commerce backend application that handles user authenticati
 ```
 ## Endpoints
 ### User Routes (/users)
+* GET /:id : to get the user details
 * POST /register: Register a new user.
 * POST /login: Log in a user and return access and refresh tokens.
 * POST /logout: Log out a user and clear tokens.
@@ -77,6 +78,10 @@ The server will start and listen for requests on the configured port.
 
 ## Error Handling
 * The application uses a custom `ApiError` class to handle errors and an `errorHandler` middleware to catch and respond to errors consistently across the application.
+
+## Deployment Links :-
+* For backend - https://amazon-backend-kbd0.onrender.com/
+* For frontend - https://amzone-frontend.vercel.app/
 
 ## Contact me :-
 On email:
